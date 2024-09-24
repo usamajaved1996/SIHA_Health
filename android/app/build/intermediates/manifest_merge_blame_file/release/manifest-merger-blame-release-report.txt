@@ -1,0 +1,789 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.sihaHealth"
+4    android:versionCode="2"
+5    android:versionName="2.3" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:2:5-67
+11-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:2:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:3:5-79
+12-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:3:22-76
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:4:5-78
+13-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:4:22-76
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:5:5-80
+14-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:5:22-78
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:6:5-64
+15-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:6:22-62
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:7:5-79
+16-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:7:22-77
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:8:5-80
+17-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:8:22-78
+18    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+18-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:9:1-72
+18-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:9:18-70
+19    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required to check whether Wi-Fi is enabled -->
+19-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:5-68
+19-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:22-65
+20    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required to to download files without a notification -->
+20-->[:react-native-blob-util] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:5-76
+20-->[:react-native-blob-util] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:22-73
+21    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+21-->[:react-native-blob-util] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:32:5-88
+21-->[:react-native-blob-util] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:32:22-85
+22
+23    <queries>
+23-->[:react-native-image-crop-picker] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:7:5-11:15
+24        <intent>
+24-->[:react-native-image-crop-picker] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-10:18
+25            <action android:name="android.media.action.IMAGE_CAPTURE" />
+25-->[:react-native-image-crop-picker] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-73
+25-->[:react-native-image-crop-picker] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:21-70
+26        </intent>
+27        <!-- Needs to be explicitly declared on Android R+ -->
+28        <package android:name="com.google.android.apps.maps" />
+28-->[com.google.android.gms:play-services-maps:18.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ffbe87db20c0bd0fa5bfadc8d83aa2de/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:9-64
+28-->[com.google.android.gms:play-services-maps:18.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ffbe87db20c0bd0fa5bfadc8d83aa2de/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:18-61
+29    </queries> <!-- Required by older versions of Google Play services to create IID tokens -->
+30    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+30-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:26:5-82
+30-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:26:22-79
+31    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+31-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/c4e5de119d96152b6fd2b11f831878c0/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:25:5-79
+31-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/c4e5de119d96152b6fd2b11f831878c0/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:25:22-76
+32    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+32-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/c4e5de119d96152b6fd2b11f831878c0/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:26:5-88
+32-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/c4e5de119d96152b6fd2b11f831878c0/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:26:22-85
+33    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+33-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/c4e5de119d96152b6fd2b11f831878c0/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:27:5-82
+33-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/c4e5de119d96152b6fd2b11f831878c0/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:27:22-79
+34
+35    <uses-feature
+35-->[com.google.android.gms:play-services-maps:18.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ffbe87db20c0bd0fa5bfadc8d83aa2de/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:26:5-28:35
+36        android:glEsVersion="0x00020000"
+36-->[com.google.android.gms:play-services-maps:18.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ffbe87db20c0bd0fa5bfadc8d83aa2de/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:27:9-41
+37        android:required="true" />
+37-->[com.google.android.gms:play-services-maps:18.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ffbe87db20c0bd0fa5bfadc8d83aa2de/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:28:9-32
+38
+39    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+39-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/395032b740647036f7a14dbe44c89c59/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:26:5-110
+39-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/395032b740647036f7a14dbe44c89c59/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:26:22-107
+40    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+40-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:5-81
+40-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:22-78
+41    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+41-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
+41-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:22-74
+42
+43    <permission
+43-->[androidx.core:core:1.12.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/021e517ad760b48ebc53243b2224699d/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+44        android:name="com.sihaHealth.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+44-->[androidx.core:core:1.12.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/021e517ad760b48ebc53243b2224699d/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+45        android:protectionLevel="signature" />
+45-->[androidx.core:core:1.12.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/021e517ad760b48ebc53243b2224699d/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+46
+47    <uses-permission android:name="com.sihaHealth.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+47-->[androidx.core:core:1.12.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/021e517ad760b48ebc53243b2224699d/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+47-->[androidx.core:core:1.12.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/021e517ad760b48ebc53243b2224699d/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+48
+49    <application
+49-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:11:5-43:19
+50        android:name="com.sihaHealth.MainApplication"
+50-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:12:7-38
+51        android:allowBackup="false"
+51-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:16:7-34
+52        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+52-->[androidx.core:core:1.12.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/021e517ad760b48ebc53243b2224699d/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+53        android:extractNativeLibs="false"
+54        android:icon="@mipmap/ic_launcher"
+54-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:14:7-41
+55        android:label="@string/app_name"
+55-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:13:7-39
+56        android:roundIcon="@mipmap/ic_launcher_round"
+56-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:15:7-52
+57        android:theme="@style/AppTheme" >
+57-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:17:7-38
+58        <activity
+58-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:18:7-29:18
+59            android:name="com.sihaHealth.MainActivity"
+59-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:19:9-37
+60            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+60-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:21:9-118
+61            android:exported="true"
+61-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:24:9-32
+62            android:label="@string/app_name"
+62-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:20:9-41
+63            android:launchMode="singleTask"
+63-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:22:9-40
+64            android:windowSoftInputMode="adjustResize" >
+64-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:23:9-51
+65            <intent-filter>
+65-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:25:9-28:25
+66                <action android:name="android.intent.action.MAIN" />
+66-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:26:13-65
+66-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:26:21-62
+67
+68                <category android:name="android.intent.category.LAUNCHER" />
+68-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:27:13-73
+68-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:27:23-70
+69            </intent-filter>
+70        </activity>
+71
+72        <meta-data
+72-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:30:9-32:70
+73            android:name="com.google.android.geo.API_KEY"
+73-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:31:13-58
+74            android:value="AIzaSyDMuLH48GaqpZKsIaXCbNJvnpDezRoEmWQ" />
+74-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:32:13-68
+75
+76        <provider
+77            android:name="com.vinzscam.reactnativefileviewer.FileProvider"
+77-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:34:3-65
+78            android:authorities="com.sihaHealth.provider"
+78-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:35:3-50
+79            android:exported="false"
+79-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:36:3-27
+80            android:grantUriPermissions="true" >
+80-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:37:3-37
+81            <meta-data
+81-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:38:3-41:5
+82                android:name="android.support.FILE_PROVIDER_PATHS"
+82-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:39:4-54
+83                android:resource="@xml/file_viewer_provider_paths" />
+83-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:40:4-54
+84        </provider>
+85
+86        <service
+86-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-14:40
+87            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService"
+87-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-103
+88            android:exported="false" />
+88-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-37
+89        <service
+89-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:9-21:19
+90            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService"
+90-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-95
+91            android:exported="false" >
+91-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-37
+92            <intent-filter>
+92-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-20:29
+93                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+93-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-78
+93-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:25-75
+94            </intent-filter>
+95        </service>
+96
+97        <receiver
+97-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:9-30:20
+98            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver"
+98-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-96
+99            android:exported="true"
+99-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:13-36
+100            android:permission="com.google.android.c2dm.permission.SEND" >
+100-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-73
+101            <intent-filter>
+101-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-29:29
+102                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+102-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:17-81
+102-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:25-78
+103            </intent-filter>
+104        </receiver>
+105
+106        <meta-data
+106-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:32:9-34:36
+107            android:name="firebase_messaging_auto_init_enabled"
+107-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:33:13-64
+108            android:value="true" />
+108-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:34:13-33
+109        <meta-data
+109-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:35:9-37:32
+110            android:name="com.google.firebase.messaging.default_notification_channel_id"
+110-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-89
+111            android:value="" />
+111-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:37:13-29
+112        <meta-data
+112-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:38:9-40:47
+113            android:name="com.google.firebase.messaging.default_notification_color"
+113-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:39:13-84
+114            android:resource="@color/white" />
+114-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:40:13-44
+115        <meta-data
+115-->[:react-native-firebase_app] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:9-11:36
+116            android:name="app_data_collection_default_enabled"
+116-->[:react-native-firebase_app] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-63
+117            android:value="true" />
+117-->[:react-native-firebase_app] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-33
+118
+119        <service
+119-->[:react-native-firebase_app] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:9-21:19
+120            android:name="com.google.firebase.components.ComponentDiscoveryService"
+120-->[:react-native-firebase_app] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-84
+121            android:directBootAware="true"
+121-->[:react-native-firebase_app] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-43
+122            android:exported="false" >
+122-->[:react-native-firebase_app] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-37
+123            <meta-data
+123-->[:react-native-firebase_app] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-20:85
+124                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
+124-->[:react-native-firebase_app] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-120
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[:react-native-firebase_app] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:17-82
+126            <meta-data
+126-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:57:13-59:85
+127                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+127-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:58:17-122
+128                android:value="com.google.firebase.components.ComponentRegistrar" />
+128-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:59:17-82
+129            <meta-data
+129-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:60:13-62:85
+130                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+130-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:61:17-119
+131                android:value="com.google.firebase.components.ComponentRegistrar" />
+131-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:62:17-82
+132            <meta-data
+132-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/c4e5de119d96152b6fd2b11f831878c0/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:37:13-39:85
+133                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+133-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/c4e5de119d96152b6fd2b11f831878c0/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:38:17-139
+134                android:value="com.google.firebase.components.ComponentRegistrar" />
+134-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/c4e5de119d96152b6fd2b11f831878c0/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:39:17-82
+135            <meta-data
+135-->[com.google.firebase:firebase-installations:17.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/e2005eb493657e3b5cf594e932b18e67/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:15:13-17:85
+136                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+136-->[com.google.firebase:firebase-installations:17.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/e2005eb493657e3b5cf594e932b18e67/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:16:17-130
+137                android:value="com.google.firebase.components.ComponentRegistrar" />
+137-->[com.google.firebase:firebase-installations:17.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/e2005eb493657e3b5cf594e932b18e67/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:17:17-82
+138            <meta-data
+138-->[com.google.firebase:firebase-installations:17.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/e2005eb493657e3b5cf594e932b18e67/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:18:13-20:85
+139                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+139-->[com.google.firebase:firebase-installations:17.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/e2005eb493657e3b5cf594e932b18e67/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:19:17-127
+140                android:value="com.google.firebase.components.ComponentRegistrar" />
+140-->[com.google.firebase:firebase-installations:17.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/e2005eb493657e3b5cf594e932b18e67/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:20:17-82
+141            <meta-data
+141-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ec048ff4e3b8708db0ff5cc6f9d1bc9e/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:12:13-14:85
+142                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+142-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ec048ff4e3b8708db0ff5cc6f9d1bc9e/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:13:17-116
+143                android:value="com.google.firebase.components.ComponentRegistrar" />
+143-->[com.google.firebase:firebase-common-ktx:20.4.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ec048ff4e3b8708db0ff5cc6f9d1bc9e/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:14:17-82
+144            <meta-data
+144-->[com.google.firebase:firebase-common:20.4.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/7c0a9e3d5f90aa9792dc943e02d9346c/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:35:13-37:85
+145                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+145-->[com.google.firebase:firebase-common:20.4.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/7c0a9e3d5f90aa9792dc943e02d9346c/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:36:17-109
+146                android:value="com.google.firebase.components.ComponentRegistrar" />
+146-->[com.google.firebase:firebase-common:20.4.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/7c0a9e3d5f90aa9792dc943e02d9346c/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:37:17-82
+147            <meta-data
+147-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/8d78f12d3f183bc0ae6f6542583df37f/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:27:13-29:85
+148                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+148-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/8d78f12d3f183bc0ae6f6542583df37f/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:28:17-115
+149                android:value="com.google.firebase.components.ComponentRegistrar" />
+149-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/8d78f12d3f183bc0ae6f6542583df37f/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:29:17-82
+150        </service>
+151
+152        <provider
+152-->[:react-native-firebase_app] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:9-27:38
+153            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
+153-->[:react-native-firebase_app] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-88
+154            android:authorities="com.sihaHealth.reactnativefirebaseappinitprovider"
+154-->[:react-native-firebase_app] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:13-86
+155            android:exported="false"
+155-->[:react-native-firebase_app] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-37
+156            android:initOrder="99" />
+156-->[:react-native-firebase_app] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-35
+157        <provider
+157-->[:react-native-blob-util] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:35:9-43:20
+158            android:name="com.ReactNativeBlobUtil.Utils.FileProvider"
+158-->[:react-native-blob-util] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-70
+159            android:authorities="com.sihaHealth.provider"
+159-->[:react-native-blob-util] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:37:13-60
+160            android:exported="false"
+160-->[:react-native-blob-util] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:38:13-37
+161            android:grantUriPermissions="true" >
+161-->[:react-native-blob-util] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-blob-util/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:39:13-47
+162            <meta-data
+162-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:38:3-41:5
+163                android:name="android.support.FILE_PROVIDER_PATHS"
+163-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:39:4-54
+164                android:resource="@xml/provider_paths" />
+164-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:40:4-54
+165        </provider>
+166        <provider
+166-->[:react-native-image-crop-picker] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-24:20
+167            android:name="com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider"
+167-->[:react-native-image-crop-picker] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-94
+168            android:authorities="com.sihaHealth.provider"
+168-->[:react-native-image-crop-picker] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-60
+169            android:exported="false"
+169-->[:react-native-image-crop-picker] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-37
+170            android:grantUriPermissions="true" >
+170-->[:react-native-image-crop-picker] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-47
+171            <meta-data
+171-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:38:3-41:5
+172                android:name="android.support.FILE_PROVIDER_PATHS"
+172-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:39:4-54
+173                android:resource="@xml/ivpusic_imagepicker_provider_paths" />
+173-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:40:4-54
+174        </provider>
+175
+176        <activity
+176-->[:react-native-image-crop-picker] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:9-28:72
+177            android:name="com.yalantis.ucrop.UCropActivity"
+177-->[:react-native-image-crop-picker] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-60
+178            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+178-->[:react-native-image-crop-picker] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:13-69
+179
+180        <provider
+180-->[:react-native-image-picker] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-16:20
+181            android:name="com.imagepicker.ImagePickerProvider"
+181-->[:react-native-image-picker] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-63
+182            android:authorities="com.sihaHealth.imagepickerprovider"
+182-->[:react-native-image-picker] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-71
+183            android:exported="false"
+183-->[:react-native-image-picker] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-37
+184            android:grantUriPermissions="true" >
+184-->[:react-native-image-picker] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-47
+185            <meta-data
+185-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:38:3-41:5
+186                android:name="android.support.FILE_PROVIDER_PATHS"
+186-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:39:4-54
+187                android:resource="@xml/imagepicker_provider_paths" />
+187-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:40:4-54
+188        </provider>
+189        <provider
+189-->[:react-native-webview] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-16:20
+190            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+190-->[:react-native-webview] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-83
+191            android:authorities="com.sihaHealth.fileprovider"
+191-->[:react-native-webview] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-64
+192            android:exported="false"
+192-->[:react-native-webview] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-37
+193            android:grantUriPermissions="true" >
+193-->[:react-native-webview] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-47
+194            <meta-data
+194-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:38:3-41:5
+195                android:name="android.support.FILE_PROVIDER_PATHS"
+195-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:39:4-54
+196                android:resource="@xml/file_provider_paths" />
+196-->/Users/mac/Desktop/SIHA-Mobile-App/android/app/src/main/AndroidManifest.xml:40:4-54
+197        </provider>
+198
+199        <receiver
+199-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:29:9-40:20
+200            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+200-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:30:13-78
+201            android:exported="true"
+201-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:31:13-36
+202            android:permission="com.google.android.c2dm.permission.SEND" >
+202-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:32:13-73
+203            <intent-filter>
+203-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-29:29
+204                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+204-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:17-81
+204-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:25-78
+205            </intent-filter>
+206
+207            <meta-data
+207-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:37:13-39:40
+208                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+208-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:38:17-92
+209                android:value="true" />
+209-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:39:17-37
+210        </receiver>
+211        <!--
+212             FirebaseMessagingService performs security checks at runtime,
+213             but set to not exported to explicitly avoid allowing another app to call it.
+214        -->
+215        <service
+215-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:46:9-53:19
+216            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+216-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:47:13-82
+217            android:directBootAware="true"
+217-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:48:13-43
+218            android:exported="false" >
+218-->[com.google.firebase:firebase-messaging:23.4.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ccf8ca7f68a8e4ceff3a0cbca4b7be90/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:49:13-37
+219            <intent-filter android:priority="-500" >
+219-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-20:29
+220                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+220-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-78
+220-->[:react-native-firebase_messaging] /Users/mac/Desktop/SIHA-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:25-75
+221            </intent-filter>
+222        </service>
+223
+224        <property
+224-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/c4e5de119d96152b6fd2b11f831878c0/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:30:9-32:61
+225            android:name="android.adservices.AD_SERVICES_CONFIG"
+225-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/c4e5de119d96152b6fd2b11f831878c0/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:31:13-65
+226            android:resource="@xml/ga_ad_services_config" />
+226-->[com.google.android.gms:play-services-measurement-api:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/c4e5de119d96152b6fd2b11f831878c0/transformed/jetified-play-services-measurement-api-21.5.0/AndroidManifest.xml:32:13-58
+227
+228        <provider
+228-->[com.google.firebase:firebase-common:20.4.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/7c0a9e3d5f90aa9792dc943e02d9346c/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:23:9-28:39
+229            android:name="com.google.firebase.provider.FirebaseInitProvider"
+229-->[com.google.firebase:firebase-common:20.4.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/7c0a9e3d5f90aa9792dc943e02d9346c/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:24:13-77
+230            android:authorities="com.sihaHealth.firebaseinitprovider"
+230-->[com.google.firebase:firebase-common:20.4.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/7c0a9e3d5f90aa9792dc943e02d9346c/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:25:13-72
+231            android:directBootAware="true"
+231-->[com.google.firebase:firebase-common:20.4.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/7c0a9e3d5f90aa9792dc943e02d9346c/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:26:13-43
+232            android:exported="false"
+232-->[com.google.firebase:firebase-common:20.4.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/7c0a9e3d5f90aa9792dc943e02d9346c/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:27:13-37
+233            android:initOrder="100" />
+233-->[com.google.firebase:firebase-common:20.4.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/7c0a9e3d5f90aa9792dc943e02d9346c/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:28:13-36
+234
+235        <activity
+235-->[com.google.android.gms:play-services-auth:20.7.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/be3702245e632bcf9c0e2d9208c01001/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+236            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+236-->[com.google.android.gms:play-services-auth:20.7.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/be3702245e632bcf9c0e2d9208c01001/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+237            android:excludeFromRecents="true"
+237-->[com.google.android.gms:play-services-auth:20.7.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/be3702245e632bcf9c0e2d9208c01001/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+238            android:exported="false"
+238-->[com.google.android.gms:play-services-auth:20.7.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/be3702245e632bcf9c0e2d9208c01001/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+239            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+239-->[com.google.android.gms:play-services-auth:20.7.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/be3702245e632bcf9c0e2d9208c01001/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+240        <!--
+241            Service handling Google Sign-In user revocation. For apps that do not integrate with
+242            Google Sign-In, this service will never be started.
+243        -->
+244        <service
+244-->[com.google.android.gms:play-services-auth:20.7.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/be3702245e632bcf9c0e2d9208c01001/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+245            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+245-->[com.google.android.gms:play-services-auth:20.7.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/be3702245e632bcf9c0e2d9208c01001/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
+246            android:exported="true"
+246-->[com.google.android.gms:play-services-auth:20.7.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/be3702245e632bcf9c0e2d9208c01001/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+247            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+247-->[com.google.android.gms:play-services-auth:20.7.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/be3702245e632bcf9c0e2d9208c01001/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+248            android:visibleToInstantApps="true" />
+248-->[com.google.android.gms:play-services-auth:20.7.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/be3702245e632bcf9c0e2d9208c01001/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+249
+250        <meta-data
+250-->[com.google.maps.android:android-maps-utils:3.8.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/c9b8f2b0a3a1096c8e3f5b3f34214e2c/transformed/jetified-android-maps-utils-3.8.2/AndroidManifest.xml:8:9-10:69
+251            android:name="com.google.android.gms.version"
+251-->[com.google.maps.android:android-maps-utils:3.8.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/c9b8f2b0a3a1096c8e3f5b3f34214e2c/transformed/jetified-android-maps-utils-3.8.2/AndroidManifest.xml:9:13-58
+252            android:value="@integer/google_play_services_version" /> <!-- Needs to be explicitly declared on P+ -->
+252-->[com.google.maps.android:android-maps-utils:3.8.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/c9b8f2b0a3a1096c8e3f5b3f34214e2c/transformed/jetified-android-maps-utils-3.8.2/AndroidManifest.xml:10:13-66
+253        <uses-library
+253-->[com.google.android.gms:play-services-maps:18.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ffbe87db20c0bd0fa5bfadc8d83aa2de/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:39:9-41:40
+254            android:name="org.apache.http.legacy"
+254-->[com.google.android.gms:play-services-maps:18.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ffbe87db20c0bd0fa5bfadc8d83aa2de/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:40:13-50
+255            android:required="false" />
+255-->[com.google.android.gms:play-services-maps:18.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ffbe87db20c0bd0fa5bfadc8d83aa2de/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:41:13-37
+256
+257        <activity
+257-->[com.google.android.gms:play-services-base:18.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/9014086d2af3685d27907f076d546a29/transformed/jetified-play-services-base-18.2.0/AndroidManifest.xml:20:9-22:45
+258            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+258-->[com.google.android.gms:play-services-base:18.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/9014086d2af3685d27907f076d546a29/transformed/jetified-play-services-base-18.2.0/AndroidManifest.xml:20:19-85
+259            android:exported="false"
+259-->[com.google.android.gms:play-services-base:18.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/9014086d2af3685d27907f076d546a29/transformed/jetified-play-services-base-18.2.0/AndroidManifest.xml:22:19-43
+260            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+260-->[com.google.android.gms:play-services-base:18.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/9014086d2af3685d27907f076d546a29/transformed/jetified-play-services-base-18.2.0/AndroidManifest.xml:21:19-78
+261
+262        <receiver
+262-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/395032b740647036f7a14dbe44c89c59/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:29:9-33:20
+263            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+263-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/395032b740647036f7a14dbe44c89c59/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:30:13-85
+264            android:enabled="true"
+264-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/395032b740647036f7a14dbe44c89c59/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:31:13-35
+265            android:exported="false" >
+265-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/395032b740647036f7a14dbe44c89c59/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:32:13-37
+266        </receiver>
+267
+268        <service
+268-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/395032b740647036f7a14dbe44c89c59/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:35:9-38:40
+269            android:name="com.google.android.gms.measurement.AppMeasurementService"
+269-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/395032b740647036f7a14dbe44c89c59/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:36:13-84
+270            android:enabled="true"
+270-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/395032b740647036f7a14dbe44c89c59/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:37:13-35
+271            android:exported="false" />
+271-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/395032b740647036f7a14dbe44c89c59/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:38:13-37
+272        <service
+272-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/395032b740647036f7a14dbe44c89c59/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:39:9-43:72
+273            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+273-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/395032b740647036f7a14dbe44c89c59/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:40:13-87
+274            android:enabled="true"
+274-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/395032b740647036f7a14dbe44c89c59/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:41:13-35
+275            android:exported="false"
+275-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/395032b740647036f7a14dbe44c89c59/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:42:13-37
+276            android:permission="android.permission.BIND_JOB_SERVICE" />
+276-->[com.google.android.gms:play-services-measurement:21.5.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/395032b740647036f7a14dbe44c89c59/transformed/jetified-play-services-measurement-21.5.0/AndroidManifest.xml:43:13-69
+277
+278        <uses-library
+278-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/8dc5a266881a1ccaded9a1b660bf328e/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:23:9-25:40
+279            android:name="android.ext.adservices"
+279-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/8dc5a266881a1ccaded9a1b660bf328e/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:24:13-50
+280            android:required="false" />
+280-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/8dc5a266881a1ccaded9a1b660bf328e/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:25:13-37
+281
+282        <provider
+282-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
+283            android:name="androidx.startup.InitializationProvider"
+283-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:32:13-67
+284            android:authorities="com.sihaHealth.androidx-startup"
+284-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:33:13-68
+285            android:exported="false" >
+285-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:34:13-37
+286            <meta-data
+286-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
+287                android:name="androidx.work.WorkManagerInitializer"
+287-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
+288                android:value="androidx.startup" />
+288-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
+289            <meta-data
+289-->[androidx.emoji2:emoji2:1.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/59e771abec58fe9e70a474dce80d60b1/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+290                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+290-->[androidx.emoji2:emoji2:1.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/59e771abec58fe9e70a474dce80d60b1/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+291                android:value="androidx.startup" />
+291-->[androidx.emoji2:emoji2:1.2.0] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/59e771abec58fe9e70a474dce80d60b1/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+292            <meta-data
+292-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/b2a38fbf6a4c4f5e38994d2bb8d19aa6/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+293                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+293-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/b2a38fbf6a4c4f5e38994d2bb8d19aa6/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+294                android:value="androidx.startup" />
+294-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/b2a38fbf6a4c4f5e38994d2bb8d19aa6/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+295        </provider>
+296
+297        <service
+297-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
+298            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+298-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
+299            android:directBootAware="false"
+299-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
+300            android:enabled="@bool/enable_system_alarm_service_default"
+300-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+301            android:exported="false" />
+301-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
+302        <service
+302-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
+303            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+303-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
+304            android:directBootAware="false"
+304-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
+305            android:enabled="@bool/enable_system_job_service_default"
+305-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
+306            android:exported="true"
+306-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
+307            android:permission="android.permission.BIND_JOB_SERVICE" />
+307-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
+308        <service
+308-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
+309            android:name="androidx.work.impl.foreground.SystemForegroundService"
+309-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
+310            android:directBootAware="false"
+310-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
+311            android:enabled="@bool/enable_system_foreground_service_default"
+311-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
+312            android:exported="false" />
+312-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
+313
+314        <receiver
+314-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
+315            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+315-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
+316            android:directBootAware="false"
+316-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
+317            android:enabled="true"
+317-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
+318            android:exported="false" />
+318-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
+319        <receiver
+319-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
+320            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+320-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
+321            android:directBootAware="false"
+321-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
+322            android:enabled="false"
+322-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
+323            android:exported="false" >
+323-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
+324            <intent-filter>
+324-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
+325                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+325-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
+325-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
+326                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+326-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
+326-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
+327            </intent-filter>
+328        </receiver>
+329        <receiver
+329-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
+330            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+330-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
+331            android:directBootAware="false"
+331-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
+332            android:enabled="false"
+332-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
+333            android:exported="false" >
+333-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
+334            <intent-filter>
+334-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
+335                <action android:name="android.intent.action.BATTERY_OKAY" />
+335-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
+335-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
+336                <action android:name="android.intent.action.BATTERY_LOW" />
+336-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
+336-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
+337            </intent-filter>
+338        </receiver>
+339        <receiver
+339-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
+340            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+340-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+341            android:directBootAware="false"
+341-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
+342            android:enabled="false"
+342-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+343            android:exported="false" >
+343-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+344            <intent-filter>
+344-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
+345                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+345-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
+345-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
+346                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+346-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
+346-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
+347            </intent-filter>
+348        </receiver>
+349        <receiver
+349-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
+350            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+350-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
+351            android:directBootAware="false"
+351-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
+352            android:enabled="false"
+352-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
+353            android:exported="false" >
+353-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+354            <intent-filter>
+354-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
+355                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+355-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
+355-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+356            </intent-filter>
+357        </receiver>
+358        <receiver
+358-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
+359            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+359-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
+360            android:directBootAware="false"
+360-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
+361            android:enabled="false"
+361-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
+362            android:exported="false" >
+362-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
+363            <intent-filter>
+363-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
+364                <action android:name="android.intent.action.BOOT_COMPLETED" />
+364-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
+364-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
+365                <action android:name="android.intent.action.TIME_SET" />
+365-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
+365-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
+366                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+366-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
+366-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
+367            </intent-filter>
+368        </receiver>
+369        <receiver
+369-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
+370            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+370-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
+371            android:directBootAware="false"
+371-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
+372            android:enabled="@bool/enable_system_alarm_service_default"
+372-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
+373            android:exported="false" >
+373-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
+374            <intent-filter>
+374-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
+375                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+375-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
+375-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
+376            </intent-filter>
+377        </receiver>
+378        <receiver
+378-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
+379            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+379-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
+380            android:directBootAware="false"
+380-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
+381            android:enabled="true"
+381-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
+382            android:exported="true"
+382-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
+383            android:permission="android.permission.DUMP" >
+383-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
+384            <intent-filter>
+384-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
+385                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+385-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
+385-->[androidx.work:work-runtime:2.7.1] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/ff35f37ce80a7ab95b95d6884a498cb2/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
+386            </intent-filter>
+387        </receiver>
+388
+389        <service
+389-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/df97d8a227dd15df0da45ca794873f49/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+390            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+390-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/df97d8a227dd15df0da45ca794873f49/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+391            android:exported="false" >
+391-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/df97d8a227dd15df0da45ca794873f49/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+392            <meta-data
+392-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/df97d8a227dd15df0da45ca794873f49/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+393                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+393-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/df97d8a227dd15df0da45ca794873f49/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+394                android:value="cct" />
+394-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/df97d8a227dd15df0da45ca794873f49/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
+395        </service>
+396        <service
+396-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/93d2fedb6156b3bddbf2e50dae1a6dbf/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+397            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+397-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/93d2fedb6156b3bddbf2e50dae1a6dbf/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+398            android:exported="false"
+398-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/93d2fedb6156b3bddbf2e50dae1a6dbf/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+399            android:permission="android.permission.BIND_JOB_SERVICE" >
+399-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/93d2fedb6156b3bddbf2e50dae1a6dbf/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+400        </service>
+401
+402        <receiver
+402-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/93d2fedb6156b3bddbf2e50dae1a6dbf/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+403            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+403-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/93d2fedb6156b3bddbf2e50dae1a6dbf/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+404            android:exported="false" />
+404-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/93d2fedb6156b3bddbf2e50dae1a6dbf/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+405
+406        <service
+406-->[androidx.room:room-runtime:2.2.5] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/59186d0f9d1a1f0a3a2e8486dddd29c9/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+407            android:name="androidx.room.MultiInstanceInvalidationService"
+407-->[androidx.room:room-runtime:2.2.5] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/59186d0f9d1a1f0a3a2e8486dddd29c9/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+408            android:directBootAware="true"
+408-->[androidx.room:room-runtime:2.2.5] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/59186d0f9d1a1f0a3a2e8486dddd29c9/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+409            android:exported="false" />
+409-->[androidx.room:room-runtime:2.2.5] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/59186d0f9d1a1f0a3a2e8486dddd29c9/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+410
+411        <meta-data
+411-->[com.facebook.soloader:soloader:0.10.5] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/4f82f2f7547af464c33a682aba38f94d/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
+412            android:name="com.facebook.soloader.enabled"
+412-->[com.facebook.soloader:soloader:0.10.5] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/4f82f2f7547af464c33a682aba38f94d/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:13:13-57
+413            android:value="false" />
+413-->[com.facebook.soloader:soloader:0.10.5] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/4f82f2f7547af464c33a682aba38f94d/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:14:13-34
+414
+415        <activity
+415-->[com.jakewharton:process-phoenix:2.1.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/2f1fc20697ccd20135cd1e9c659a8028/transformed/jetified-process-phoenix-2.1.2/AndroidManifest.xml:8:9-12:75
+416            android:name="com.jakewharton.processphoenix.ProcessPhoenix"
+416-->[com.jakewharton:process-phoenix:2.1.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/2f1fc20697ccd20135cd1e9c659a8028/transformed/jetified-process-phoenix-2.1.2/AndroidManifest.xml:9:13-73
+417            android:exported="false"
+417-->[com.jakewharton:process-phoenix:2.1.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/2f1fc20697ccd20135cd1e9c659a8028/transformed/jetified-process-phoenix-2.1.2/AndroidManifest.xml:10:13-37
+418            android:process=":phoenix"
+418-->[com.jakewharton:process-phoenix:2.1.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/2f1fc20697ccd20135cd1e9c659a8028/transformed/jetified-process-phoenix-2.1.2/AndroidManifest.xml:11:13-39
+419            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+419-->[com.jakewharton:process-phoenix:2.1.2] /Users/mac/Desktop/MobileAppSiha/android/caches/transforms-4/2f1fc20697ccd20135cd1e9c659a8028/transformed/jetified-process-phoenix-2.1.2/AndroidManifest.xml:12:13-72
+420    </application>
+421
+422</manifest>

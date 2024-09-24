@@ -1,0 +1,6 @@
+module Pods_sihaHealth {
+  umbrella header "Pods-sihaHealth-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#FFFEFE</color>
+    <integer name="react_native_dev_server_port">8081</integer>
+    <string name="app_name">SIHA</string>
+    <string name="gcm_defaultSenderId" translatable="false">578973648215</string>
+    <string name="google_api_key" translatable="false">AIzaSyAHwMvb67MNCgyDoPyX8uZXW0WYuG5ppHA</string>
+    <string name="google_app_id" translatable="false">1:578973648215:android:652efffd84f57b4023ea12</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAHwMvb67MNCgyDoPyX8uZXW0WYuG5ppHA</string>
+    <string name="google_storage_bucket" translatable="false">siha-23bb1.appspot.com</string>
+    <string name="project_id" translatable="false">siha-23bb1</string>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        
+        <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
+    </style>
+</resources>

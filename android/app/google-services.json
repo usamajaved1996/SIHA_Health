@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "578973648215",
+    "project_id": "siha-23bb1",
+    "storage_bucket": "siha-23bb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578973648215:android:652efffd84f57b4023ea12",
+        "android_client_info": {
+          "package_name": "com.sihaHealth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHwMvb67MNCgyDoPyX8uZXW0WYuG5ppHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
